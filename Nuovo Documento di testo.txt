@@ -1,0 +1,460 @@
+#uiBase {
+    height: calc(100%/var(--uiscale)) !important;
+    width: calc(100%/var(--uiscale)) !important;
+    transform: scale(var(--uiscale)) !important;
+}
+
+:root{
+    --uiscale:0.8;
+	--black:black;
+	--accent:#9294F7;
+}
+
+@font-face {
+	font-family: gamefont;
+	src: url(https://raw.githubusercontent.com/South-Paw/typeface-vag-rounded/master/files/vag-rounded-400.woff2);
+}
+
+#aHolder {
+	display:none !important
+}
+
+#voiceDisplay {
+	display:none !important
+}
+
+#streamContainer {
+	display:none
+}
+
+.youNewDiv {
+	background-color:transparent
+}
+
+#menuItemContainer {
+	background-color:transparent;
+	flex-direction: row;
+	top: unset;
+	bottom:10px;
+	left:50%;
+	transform:translateX(-50%);
+	justify-content:center;
+}
+
+.menuItemTitle {
+	opacity:0;
+	width:105px;
+	height:autofill;
+	border-bottom:5px solid black;
+    border-radius:10px;
+}
+
+.menuItem {
+	flex-grow: unset;
+	width: 75px;
+	height: 75px;
+	margin: 10px;
+	transition: all 0.3s;
+	flex-direction: column-reverse;
+    justify-content:normal;
+}
+
+.menuItem .menuItemTitle {
+	color:var(--accent);
+}
+
+.menuItem:hover .menuItemTitle {
+	opacity:1;
+}
+
+.menuItem .menuItemTitle {
+    font-size: 17px !important;
+}
+
+.menuItem:hover .menBtnIcn, .menuItem:active .menBtnIcn{
+	transform:unset !important;
+	color: var(--accent) !important;
+}
+
+.menBtnIcn {
+	color: #fff !important;
+}
+
+#chatList {
+	background-color: rgb(0 0 0 / 10%)
+}
+
+#chatInput {
+    background-color: transparent;
+    border-bottom: 4px solid var(--accent);
+}
+
+#gameNameHolder{
+	display:none
+}
+
+#seasonLabel {
+	display:none
+}
+
+.headerBar {
+	background-color: transparent
+}
+
+.menuSocialB {
+	display:none
+}
+
+#editorBtnM {
+	display:none
+}
+
+
+#newsHolder {
+	display:none
+}
+
+
+#termsInfo {
+	display:none
+}
+
+.verticalSeparator {
+   background:transparent 
+}
+
+#mLevelCont {
+    background-color:transparent
+}
+
+#bubbleContainer {
+	display:none
+}
+
+.speechBox {
+	display:none
+}
+
+#tlInfHold {
+	left:10px
+}
+
+#chatHolder {
+	left:10px!important;
+	bottom:10px!important;
+}
+
+#subLogoButtons {
+	bottom:100px
+}
+
+.button.small {
+	background-color:transparent;
+	border:transparent!important;
+}
+
+#subLogoButtons::before {
+	content: "";
+	position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+	height: 105px;
+	pointer-events: all;
+}
+
+#subLogoButtons > .button:hover, #subLogoButtons > .button:active {
+	background: transparent !important;
+	transform: unset;
+}
+
+#subLogoButtons > .button:hover:before {
+	color: var(--accent) !important;
+}
+
+#subLogoButtons > .button::before {
+	position: absolute;
+	font-family: 'Material Icons Outlined';
+	width: 75px;
+    height: 75px;
+	left: 0;
+	top: 0;
+    color: white;
+	font-size: 60px;
+	line-height: 75px;
+}
+
+#subLogoButtons > .button {
+	flex-grow: unset;
+	width: 75px;
+    height: 75px;
+    margin: 10px;
+    font-size: 0 !important;
+    padding: unset !important;
+}
+
+
+#menuBtnHost::before {
+	content: "broadcast_on_personal";
+}
+
+#menuBtnBrowser::before {
+	content: "travel_explore";
+}
+
+#inviteButton::before {
+	content: "content_copy";
+}
+
+#menuBtnJoin::before {
+	content: "add_link";
+}
+
+#customizeButton {
+	background-color:transparent;
+	border:transparent!important;
+}
+
+#customizeButton:hover {
+	transform: unset;
+	background: transparent;
+	color: var(--accent) !important;
+}
+
+#customizeButton > .material-icons {
+	display:none
+}
+
+#policeButton {
+    background-color: rgb(146 148 247);
+    border-color:transparent!important; 
+    border-radius:99999px;
+}
+
+#policeButton:hover {
+    transform:scale(1.5);
+    background: transparent;
+}
+
+
+#menuPingDisplay {
+	display:none!important
+}
+
+#menuAccountUsername {
+	vertical-align:-webkit-baseline-middle;
+	
+}
+
+.mainJunkInfo {
+	margin-top:-23px
+}
+
+.krInfo {
+	margin-top:-25px
+}
+
+#mLevelContV {
+	font-size:40px;
+	margin-top: -7px;
+}
+
+.progressBar {
+	width:120%;
+}
+
+.menuClassLevelBox {
+	background-color: transparent
+}
+
+.menuClassLevelBox {
+	text-shadow: -1px -1px 0 #202020,1px -1px 0 #202020,-1px 1px 0 #202020,1px 1px 0 #202020,-2px -2px 0 #202020,2px -2px 0 #202020,-2px 2px 0 #202020,2px 2px 0 #202020,-3px -3px 0 #202020,3px -3px 0 #202020,-3px 3px 0 #202020,3px 3px 0 #202020!important
+}
+
+.menuClassPlayerName {
+	text-shadow: -1px -1px 0 #202020,1px -1px 0 #202020,-1px 1px 0 #202020,1px 1px 0 #202020,-2px -2px 0 #202020,2px -2px 0 #202020,-2px 2px 0 #202020,2px 2px 0 #202020,-3px -3px 0 #202020,3px -3px 0 #202020,-3px 3px 0 #202020,3px 3px 0 #202020!important
+}
+
+#menuClassContainer {
+	right:-200px
+}
+
+#timerDisplay {
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	top:0px;
+	background-color: rgb(0 0 0 / 0%) !important;
+}
+
+#timerVal {
+	font-size:75px;
+	text-shadow: 3px 0 #000, -3px 0 #000, 0 3px #000, 0 -3px #000,
+             3px 2px #000, 0px 0px #000, 2px 0px #000, 0px 2px #000;
+}
+
+#timerIcon {
+	display: none;
+}
+
+#hudClassIcon {
+    display: none;
+}
+
+#challIcon, #maxHP {
+	display: none;
+}
+
+#pingText {
+	vertical-align: sub;
+}
+
+.countIcon {
+	background-color: rgb(0 0 0 / 10%);
+}
+
+#killsVal, #deathsVal, #streakVal, #myScoreVal, #kdVal {
+	font-size:20px;
+}
+
+#leaderDisplay {
+	background-color: rgb(0 0 0 / 10%);
+}
+
+#leaderDisplay::before {
+    content: "BE ON TOP TO WIN";
+    display: flex;
+    color: #fff;
+    border-bottom: 4px solid var(--accent);
+    border-image-slice: 1;
+    margin-bottom: 4px;
+    padding-bottom: 4px;
+}
+
+.leaderName, .newLeaderName, .newLeaderNameF, .endTableN[style*="color:#eb5656"] {
+    color: var(--accent) !important;
+}
+
+#healthValueHolder {
+  padding: 0;
+  margin: 5px;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 10px;
+  background-color: transparent;
+  z-index: 9999 !important;
+    
+}
+#healthValue {
+  color: #fff;
+  font-size: 45px;
+  text-shadow: 3px 0 #000, -3px 0 #000, 0 3px #000, 0 -3px #000,
+             3px 2px #000, 0px 0px #000, 2px 0px #000, 0px 2px #000;
+}
+	
+#maxHP {
+	display:none;
+}
+
+#healthBar {
+  border-radius: 0px !important;
+  width: 600px;
+  height: 50px;
+  display: inline-flex;
+  justify-content: center;
+  background-color: rgb(46 46 46 / 0%);
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 10px;
+	border: 5px solid black;
+}
+
+.healthBarSeg {
+  width: -webkit-fill-available;
+  margin: 0 -1px;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.hpBSeg {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+#botRightHider {
+    display: flex !important;
+    flex-direction: row;
+    bottom: 0px;
+    right: 0px;
+    position: fixed;
+}
+
+#bottomRight, #weapDisplay {
+    position: unset;
+}
+
+#weapDisplay:not([style*=none]) {
+    display: flex !important;
+}
+
+.weapKey {
+    display: none;
+}
+
+.weapItem {
+    margin-top: 20px;
+    margin-right: 20px;
+    display: flex;
+}
+
+.weapIcon {
+    margin-right: 0 !important;
+    align-self: center;
+	width: 210px;
+	height: 105px;
+	filter: drop-shadow(10px 10px 10px #fff200) invert(100%);
+}
+
+.weapIcon[style*="0.7"] {
+    display: none;
+}
+
+#ammoIcon, #ammoMax {
+    display:none;
+}
+
+#ammoVal {
+	color: #4840ff;
+      display: inline-block;
+      font-size: 100px;
+      text-shadow: 3px 0 #000, -3px 0 #000, 0 3px #000, 0 -3px #000,
+             3px 2px #000, 0px 0px #000, 2px 0px #000, 0px 2px #000;
+      position: fixed;
+      right:50%;
+	transform:translateX(50%);
+}
+
+.weapItem:last-child .weapIcon {
+    transform: translateY(16px);
+}
+
+#ammoDisplay {
+	background-color:transparent;
+	width:150px;
+	height:120px;
+	padding:0;
+	margin:0;
+}
+
+#topMidHold {
+	position:fixed;
+	top:90px;
+}
+
+#bhHolder, #krTagHolder, #giftTagHolder, #powerUpHolder, #killStreakHolder {
+	position:fixed;
+	bottom:150px;
+	right:10px;
+}
