@@ -43,17 +43,19 @@
 
 .menuItemTitle {
 	opacity:0;
-	width:105px;
+	width:125px;
 	height:autofill;
+	padding-bottom: 15px;
 	border-bottom:5px solid black;
     border-radius:10px;
+	text-shadow:0 0 0 var(--black),1px 0 0 var(--black),-1px 0 var(--black),0 -1px var(--black),0 1px var(--black),1px 1px var(--black),1px -1px var(--black),-1px 1px var(--black),-1px -1px var(--black),0 2px var(--black),0 -2px var(--black),2px 0 var(--black),-2px 0  var(--black),1px 2px var(--black),-1px 2px var(--black),1px -2px var(--black),-1px -2px var(--black),2px 2px var(--black),-2px 2px var(--black),2px -2px var(--black),-2px -2px var(--black),0 0 2px var(--black),0 0 2px var(--black),0 0 2px var(--black)
 }
 
 .menuItem {
 	flex-grow: unset;
-	width: 75px;
+	width: 100px;
 	height: 75px;
-	margin: 10px;
+	margin: 20px;
 	transition: all 0.3s;
 	flex-direction: column-reverse;
     justify-content:normal;
@@ -68,7 +70,8 @@
 }
 
 .menuItem .menuItemTitle {
-    font-size: 17px !important;
+	margin:20px;
+    font-size: 20px !important;
 }
 
 .menuItem:hover .menBtnIcn, .menuItem:active .menBtnIcn{
@@ -109,11 +112,13 @@
 	display:none
 }
 
+#menuServerInfoContainer {
+	text-shadow:0 0 0 var(--black),1px 0 0 var(--black),-1px 0 var(--black),0 -1px var(--black),0 1px var(--black),1px 1px var(--black),1px -1px var(--black),-1px 1px var(--black),-1px -1px var(--black),0 2px var(--black),0 -2px var(--black),2px 0 var(--black),-2px 0  var(--black),1px 2px var(--black),-1px 2px var(--black),1px -2px var(--black),-1px -2px var(--black),2px 2px var(--black),-2px 2px var(--black),2px -2px var(--black),-2px -2px var(--black),0 0 2px var(--black),0 0 2px var(--black),0 0 2px var(--black)!important
+}
 
 #newsHolder {
 	display:none
 }
-
 
 #termsInfo {
 	display:none
@@ -145,74 +150,37 @@
 }
 
 #subLogoButtons {
-	bottom:100px
+	bottom:150px
 }
 
 .button.small {
 	background-color:transparent;
-	border:transparent!important;
-}
-
-#subLogoButtons::before {
-	content: "";
-	position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-	height: 105px;
-	pointer-events: all;
+	height:autofill;
+	border-bottom: 5px solid transparent!important;
+	border-top: transparent !important;
+	border-left: transparent !important;
+	border-right: transparent !important;
+    border-radius:10px;
+	text-shadow:0 0 0 var(--black),1px 0 0 var(--black),-1px 0 var(--black),0 -1px var(--black),0 1px var(--black),1px 1px var(--black),1px -1px var(--black),-1px 1px var(--black),-1px -1px var(--black),0 2px var(--black),0 -2px var(--black),2px 0 var(--black),-2px 0  var(--black),1px 2px var(--black),-1px 2px var(--black),1px -2px var(--black),-1px -2px var(--black),2px 2px var(--black),-2px 2px var(--black),2px -2px var(--black),-2px -2px var(--black),0 0 2px var(--black),0 0 2px var(--black),0 0 2px var(--black)
 }
 
 #subLogoButtons > .button:hover, #subLogoButtons > .button:active {
 	background: transparent !important;
 	transform: unset;
+	border-bottom:5px solid black!important;
+	border-top: transparent !important;
+	border-left: transparent !important;
+	border-right: transparent !important;
 }
 
-#subLogoButtons > .button:hover:before {
+#subLogoButtons > .button:hover {
 	color: var(--accent) !important;
-}
-
-#subLogoButtons > .button::before {
-	position: absolute;
-	font-family: 'Material Icons Outlined';
-	width: 75px;
-    height: 75px;
-	left: 0;
-	top: 0;
-    color: white;
-	font-size: 60px;
-	line-height: 75px;
-}
-
-#subLogoButtons > .button {
-	flex-grow: unset;
-	width: 75px;
-    height: 75px;
-    margin: 10px;
-    font-size: 0 !important;
-    padding: unset !important;
-}
-
-
-#menuBtnHost::before {
-	content: "broadcast_on_personal";
-}
-
-#menuBtnBrowser::before {
-	content: "travel_explore";
-}
-
-#inviteButton::before {
-	content: "content_copy";
-}
-
-#menuBtnJoin::before {
-	content: "add_link";
 }
 
 #customizeButton {
 	background-color:transparent;
-	border:transparent!important;
+	border-color:transparent!important;
+	text-shadow:0 0 0 var(--black),1px 0 0 var(--black),-1px 0 var(--black),0 -1px var(--black),0 1px var(--black),1px 1px var(--black),1px -1px var(--black),-1px 1px var(--black),-1px -1px var(--black),0 2px var(--black),0 -2px var(--black),2px 0 var(--black),-2px 0  var(--black),1px 2px var(--black),-1px 2px var(--black),1px -2px var(--black),-1px -2px var(--black),2px 2px var(--black),-2px 2px var(--black),2px -2px var(--black),-2px -2px var(--black),0 0 2px var(--black),0 0 2px var(--black),0 0 2px var(--black);
 }
 
 #customizeButton:hover {
@@ -225,15 +193,21 @@
 	display:none
 }
 
+.bigShadowT {
+	text-shadow:0 0 0 var(--black),1px 0 0 var(--black),-1px 0 var(--black),0 -1px var(--black),0 1px var(--black),1px 1px var(--black),1px -1px var(--black),-1px 1px var(--black),-1px -1px var(--black),0 2px var(--black),0 -2px var(--black),2px 0 var(--black),-2px 0  var(--black),1px 2px var(--black),-1px 2px var(--black),1px -2px var(--black),-1px -2px var(--black),2px 2px var(--black),-2px 2px var(--black),2px -2px var(--black),-2px -2px var(--black),0 0 2px var(--black),0 0 2px var(--black),0 0 2px var(--black);
+}
+
 #policeButton {
-    background-color: rgb(146 148 247);
-    border-color:transparent!important; 
-    border-radius:99999px;
+	content: url("https://media.discordapp.net/attachments/1092550276369621123/1092564139945242804/police.png") !important;
+	background-color:transparent;
+	border-color:transparent!important;
+	width:60px!important;
+	height:60px!important;
 }
 
 #policeButton:hover {
-    transform:scale(1.5);
-    background: transparent;
+	content: url("https://media.discordapp.net/attachments/1092550276369621123/1092550346083143720/police_hover.png") !important;
+	transform:unset;
 }
 
 
@@ -242,8 +216,7 @@
 }
 
 #menuAccountUsername {
-	vertical-align:-webkit-baseline-middle;
-	
+	vertical-align:-webkit-baseline-middle;	
 }
 
 .mainJunkInfo {
@@ -268,16 +241,45 @@
 }
 
 .menuClassLevelBox {
-	text-shadow: -1px -1px 0 #202020,1px -1px 0 #202020,-1px 1px 0 #202020,1px 1px 0 #202020,-2px -2px 0 #202020,2px -2px 0 #202020,-2px 2px 0 #202020,2px 2px 0 #202020,-3px -3px 0 #202020,3px -3px 0 #202020,-3px 3px 0 #202020,3px 3px 0 #202020!important
+	text-shadow:0 0 0 var(--black),1px 0 0 var(--black),-1px 0 var(--black),0 -1px var(--black),0 1px var(--black),1px 1px var(--black),1px -1px var(--black),-1px 1px var(--black),-1px -1px var(--black),0 2px var(--black),0 -2px var(--black),2px 0 var(--black),-2px 0  var(--black),1px 2px var(--black),-1px 2px var(--black),1px -2px var(--black),-1px -2px var(--black),2px 2px var(--black),-2px 2px var(--black),2px -2px var(--black),-2px -2px var(--black),0 0 2px var(--black),0 0 2px var(--black),0 0 2px var(--black)!important
 }
 
 .menuClassPlayerName {
-	text-shadow: -1px -1px 0 #202020,1px -1px 0 #202020,-1px 1px 0 #202020,1px 1px 0 #202020,-2px -2px 0 #202020,2px -2px 0 #202020,-2px 2px 0 #202020,2px 2px 0 #202020,-3px -3px 0 #202020,3px -3px 0 #202020,-3px 3px 0 #202020,3px 3px 0 #202020!important
+	text-shadow:0 0 0 var(--black),1px 0 0 var(--black),-1px 0 var(--black),0 -1px var(--black),0 1px var(--black),1px 1px var(--black),1px -1px var(--black),-1px 1px var(--black),-1px -1px var(--black),0 2px var(--black),0 -2px var(--black),2px 0 var(--black),-2px 0  var(--black),1px 2px var(--black),-1px 2px var(--black),1px -2px var(--black),-1px -2px var(--black),2px 2px var(--black),-2px 2px var(--black),2px -2px var(--black),-2px -2px var(--black),0 0 2px var(--black),0 0 2px var(--black),0 0 2px var(--black)!important
 }
 
 #menuClassContainer {
 	right:-200px
 }
+
+#uiBase.onMenu #spectButton {
+	text-shadow:0 0 0 var(--black),1px 0 0 var(--black),-1px 0 var(--black),0 -1px var(--black),0 1px var(--black),1px 1px var(--black),1px -1px var(--black),-1px 1px var(--black),-1px -1px var(--black),0 2px var(--black),0 -2px var(--black),2px 0 var(--black),-2px 0  var(--black),1px 2px var(--black),-1px 2px var(--black),1px -2px var(--black),-1px -2px var(--black),2px 2px var(--black),-2px 2px var(--black),2px -2px var(--black),-2px -2px var(--black),0 0 2px var(--black),0 0 2px var(--black),0 0 2px var(--black);
+}
+
+input:checked+.sliderSml {
+	background-color:var(--accent);
+}
+
+/*settings*/
+
+input:checked+.advancedSlider {
+	background-color:var(--accent);
+}
+
+input:checked+.slider {
+	background-color:var(--accent);
+}
+
+.settingsBtn {
+	background-color:var(--accent);
+}
+
+.dark .tabANew {
+	border-bottom: 5px solid #9294F7!important;
+}
+
+
+/*IN GAME*/
 
 #timerDisplay {
 	position: fixed;
